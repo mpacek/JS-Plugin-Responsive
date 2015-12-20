@@ -4,7 +4,7 @@ jQuery helper plugin, can be used to launch scripts on mobile, and desktop. As p
 
 **How to use:**
 
-```
+``` JavaScript
 var mobileFunction = function(),
 	desktopFunction = function();
 
