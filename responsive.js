@@ -10,26 +10,28 @@ $.fn.responsiveSetup = function (settings) {
 
   var onMobile = false;
 
-  // launch
+  var runFunction = function(fn) {
+    if (typeof fn === "function") {
+      fn.callFunction();
+    }
+  }
+
+  // launch on load
   if ($(window)[0].innerWidth < settings.breakpoint) {
-    settings.runMobile.callFunction();
+    runFunction(settings.runMobile);
     onMobile = true;
   }
 
-  // on window resize
+  // launch on window resize
   $(window).resize(function () {
     var windowSize = $(window)[0].innerWidth;
 
     if ((windowSize >= settings.breakpoint) && onMobile) {
-      if (typeof settings.runDesktop === "function") {
-        settings.runDesktop.callFunction();
-      }
+      runFunction(settings.runDesktop);
       onMobile = false;
     }
     else if ((windowSize < settings.breakpoint) && !onMobile) {
-      if (typeof settings.runMobile === "function") {
-        settings.runMobile.callFunction();
-      }
+      runFunction(settings.runMobile);
       onMobile = true;
     }
   });
