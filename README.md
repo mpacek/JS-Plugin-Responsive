@@ -5,7 +5,7 @@ jQuery helper plugin, can be used to launch scripts on mobile, and desktop. As p
 **How to use:**
 
 	var mobileFunction = function(),
-			desktopFunction = function();
+		desktopFunction = function();
 
 	if ($.fn.responsiveSetup) {
 	  $(document).responsiveSetup({
