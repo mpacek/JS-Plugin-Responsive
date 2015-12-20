@@ -10,8 +10,8 @@ var mobileFunction = function(),
 
 if ($.fn.responsiveSetup) {
   $(document).responsiveSetup({
-    runMobile: { callFunction: mobileFunction },
-    runDesktop: { callFunction: desktopFunction },
+		runMobile: { callFunction: mobileFunction },
+		runDesktop: { callFunction: desktopFunction },
 		breakpoint: 1080
   });
 }
