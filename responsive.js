@@ -3,15 +3,15 @@
 // Mobile setup
 $.fn.responsiveSetup = function (settings) {
   settings = jQuery.extend({
-    runMobile: '',
-    runDesktop: '',
+    runMobile: false,
+    runDesktop: false,
     breakpoint: 980
   }, settings);
 
   var onMobile = false;
 
   var runFunction = function(fn) {
-    if (typeof fn === "function") {
+    if (fn) {
       fn.callFunction();
     }
   }
