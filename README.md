@@ -2,6 +2,10 @@
 
 jQuery helper plugin, can be used to launch scripts on mobile, and desktop. As parameters takes breakpoint value, and functions to run.
 
+**equirements:**
+
+* jQuery
+
 **How to use:**
 
 ``` JavaScript
@@ -17,6 +21,6 @@ if ($.fn.responsiveSetup) {
 }
 ```
 
-Copyright 2014 Michał Pacek
+Copyright 2015 Michał Pacek
 
 Licensed under the Apache License, Version 2.0.
