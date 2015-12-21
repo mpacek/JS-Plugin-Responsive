@@ -2,7 +2,7 @@
 
 jQuery helper plugin, can be used to launch scripts on mobile, and desktop. As parameters takes breakpoint value, and functions to run.
 
-**equirements:**
+**Requirements:**
 
 * jQuery
 
