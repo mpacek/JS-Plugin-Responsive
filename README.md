@@ -13,11 +13,11 @@ var yourMobileFunction = function(),
 	yourDesktopFunction = function();
 
 if ($.fn.responsiveSetup) {
-  $(document).responsiveSetup({
-		runMobile: { callFunction: yourMobileFunction },
-		runDesktop: { callFunction: yourDesktopFunction },
-		breakpoint: 1080
-  });
+	$(document).responsiveSetup({
+		callFunctionMobile: yourMobileFunction,
+		callFunctionDesktop: yourDesktopFunction,
+		breakpoint: 1200
+	});
 }
 ```
 
